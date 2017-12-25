@@ -1,0 +1,17 @@
+pip install --user virtualenv
+
+mkdir venv
+
+python -m virtualenv venv
+
+source venv/bin/activate
+
+pip install spacy
+
+python -m spacy download en
+
+pip install nltk
+
+python nltk_download.py
+
+python infoextract.py $1
